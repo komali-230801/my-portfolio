@@ -1,0 +1,881 @@
+/* ================= GENERAL ================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #222;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background-color: #111827 !important;
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+.nav-link {
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #60a5fa !important;
+}
+
+.theme-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+
+/* ================= HOME ================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 20px 60px;
+
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+}
+
+.small-title {
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 700px;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 80px 20px;
+}
+
+.light-section {
+    background-color: #f5f7fb;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #2563eb;
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-box {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    font-size: 17px;
+}
+
+.about-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education-table {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.education-table th {
+    background-color: #111827;
+    color: white;
+    padding: 15px;
+}
+
+.education-table td {
+    padding: 14px;
+}
+
+
+/* ================= CERTIFICATES ================= */
+
+.info-card {
+    height: 100%;
+    text-align: center;
+    padding: 35px 25px;
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+}
+
+.info-card > i {
+    font-size: 45px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.info-card h4 {
+    font-weight: bold;
+}
+
+
+/* ================= EXPERIENCE ================= */
+
+.experience-card {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.experience-icon {
+    min-width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background-color: #2563eb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.experience-card h4 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.experience-card h6 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.experience-card p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-item {
+    transition: 0.3s;
+}
+
+.project-card {
+    height: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    gap: 20px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-icon {
+    min-width: 60px;
+    height: 60px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+.project-tag {
+    display: inline-block;
+    background-color: #e0ecff;
+    color: #2563eb;
+
+    padding: 4px 10px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.project-content h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    color: #555;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skill-card {
+    height: 100%;
+    text-align: center;
+    padding: 30px 20px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card > i {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.skill-card h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.skill-card p {
+    margin: 5px 0;
+}
+
+
+/* ================= SOFT SKILLS ================= */
+
+.soft-skills {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.soft-skills h3 {
+    margin-bottom: 25px;
+}
+
+.skill-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-badges span {
+    padding: 9px 18px;
+    background-color: #e0ecff;
+    color: #2563eb;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+
+/* ================= AWARDS ================= */
+
+.award-card {
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+}
+
+.award-card > i {
+    font-size: 42px;
+    color: #f59e0b;
+    margin-bottom: 15px;
+}
+
+.award-card h4 {
+    font-weight: bold;
+}
+
+
+/* ================= INTERESTS & HOBBIES ================= */
+
+.interests-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.interest-item {
+    min-width: 220px;
+    max-width: 300px;
+
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.interest-item i {
+    display: block;
+    font-size: 35px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background-color: #ffffff;
+}
+
+.contact-section h3 {
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.contact-item > i {
+    font-size: 25px;
+    color: #2563eb;
+}
+
+.contact-item strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.contact-item a {
+    color: #555;
+    word-break: break-word;
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+.success-message {
+    color: #198754;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #111827;
+    color: white;
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-small {
+    margin-top: 5px !important;
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+/* ====================================================== */
+/* ================= DARK MODE ========================== */
+/* ====================================================== */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #eeeeee;
+}
+
+
+/* ---------- HERO ---------- */
+
+body.dark-mode .hero {
+    background: #181818;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero h3 {
+    color: #eeeeee;
+}
+
+body.dark-mode .hero-description {
+    color: #cccccc;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+body.dark-mode .section {
+    color: #eeeeee;
+}
+
+body.dark-mode .light-section {
+    background-color: #1b1b1b;
+}
+
+body.dark-mode .section-title {
+    color: #ffffff;
+}
+
+body.dark-mode .section-subtitle {
+    color: #bbbbbb;
+}
+
+
+/* ---------- ABOUT / CARDS ---------- */
+
+body.dark-mode .about-box,
+body.dark-mode .info-card,
+body.dark-mode .experience-card,
+body.dark-mode .project-card,
+body.dark-mode .skill-card,
+body.dark-mode .award-card,
+body.dark-mode .interest-item {
+    background-color: #242424;
+    color: #eeeeee;
+}
+
+
+/* ---------- CARD HEADINGS ---------- */
+
+body.dark-mode .about-box h1,
+body.dark-mode .about-box h2,
+body.dark-mode .about-box h3,
+body.dark-mode .about-box h4,
+body.dark-mode .about-box h5,
+body.dark-mode .about-box h6,
+
+body.dark-mode .info-card h1,
+body.dark-mode .info-card h2,
+body.dark-mode .info-card h3,
+body.dark-mode .info-card h4,
+body.dark-mode .info-card h5,
+body.dark-mode .info-card h6,
+
+body.dark-mode .experience-card h1,
+body.dark-mode .experience-card h2,
+body.dark-mode .experience-card h3,
+body.dark-mode .experience-card h4,
+body.dark-mode .experience-card h5,
+body.dark-mode .experience-card h6,
+
+body.dark-mode .project-card h1,
+body.dark-mode .project-card h2,
+body.dark-mode .project-card h3,
+body.dark-mode .project-card h4,
+body.dark-mode .project-card h5,
+body.dark-mode .project-card h6,
+
+body.dark-mode .skill-card h1,
+body.dark-mode .skill-card h2,
+body.dark-mode .skill-card h3,
+body.dark-mode .skill-card h4,
+body.dark-mode .skill-card h5,
+body.dark-mode .skill-card h6,
+
+body.dark-mode .award-card h1,
+body.dark-mode .award-card h2,
+body.dark-mode .award-card h3,
+body.dark-mode .award-card h4,
+body.dark-mode .award-card h5,
+body.dark-mode .award-card h6,
+
+body.dark-mode .interest-item h1,
+body.dark-mode .interest-item h2,
+body.dark-mode .interest-item h3,
+body.dark-mode .interest-item h4,
+body.dark-mode .interest-item h5,
+body.dark-mode .interest-item h6 {
+    color: #ffffff;
+}
+
+
+/* ---------- CARD PARAGRAPHS ---------- */
+
+body.dark-mode .about-box p,
+body.dark-mode .info-card p,
+body.dark-mode .skill-card p,
+body.dark-mode .award-card p,
+body.dark-mode .interest-item span {
+    color: #dddddd;
+}
+
+
+/* ---------- EXPERIENCE ---------- */
+
+body.dark-mode .experience-card p {
+    color: #cccccc;
+}
+
+body.dark-mode .experience-card h6 {
+    color: #60a5fa;
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+body.dark-mode .project-content p {
+    color: #cccccc;
+}
+
+body.dark-mode .project-tag {
+    background-color: #263b5e;
+    color: #8ab4ff;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+body.dark-mode .skill-badges span {
+    background-color: #263b5e;
+    color: #8ab4ff;
+}
+
+
+/* ---------- EDUCATION TABLE ---------- */
+
+body.dark-mode .education-table {
+    background-color: #242424;
+    color: #eeeeee;
+    border-color: #555555;
+}
+
+body.dark-mode .education-table th {
+    background-color: #111827;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+body.dark-mode .education-table td {
+    background-color: #242424;
+    color: #eeeeee;
+    border-color: #555555;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+body.dark-mode .contact-section {
+    background-color: #121212;
+}
+
+body.dark-mode .contact-section h3,
+body.dark-mode .contact-section p,
+body.dark-mode .contact-section label,
+body.dark-mode .contact-item strong {
+    color: #eeeeee;
+}
+
+body.dark-mode .contact-item a {
+    color: #cccccc;
+}
+
+body.dark-mode .contact-item a:hover {
+    color: #60a5fa;
+}
+
+
+/* ---------- FORM ---------- */
+
+body.dark-mode .form-control {
+    background-color: #242424;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #242424;
+    color: #ffffff;
+    border-color: #60a5fa;
+}
+
+
+/* ---------- MODALS ---------- */
+
+body.dark-mode .modal-content {
+    background-color: #242424;
+    color: #eeeeee;
+}
+
+body.dark-mode .modal-title {
+    color: #ffffff;
+}
+
+body.dark-mode .modal-body {
+    color: #dddddd;
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+body.dark-mode .btn-outline-primary {
+    color: #8ab4ff;
+    border-color: #8ab4ff;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+body.dark-mode footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+body.dark-mode .footer-small {
+    color: #aaaaaa;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .theme-btn {
+        margin-top: 10px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 60px 18px;
+    }
+
+    .hero {
+        min-height: 90vh;
+        padding-top: 120px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h3 {
+        font-size: 21px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .experience-card {
+        flex-direction: column;
+    }
+
+    .experience-icon {
+        margin-bottom: 5px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .about-box {
+        padding: 25px;
+    }
+
+    .filter-buttons .btn {
+        width: 100%;
+    }
+
+    .contact-item {
+        gap: 12px;
+    }
+
+}
