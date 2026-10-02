@@ -92,18 +92,3 @@ The supplied portfolio content does not contain:
 - Separate project documentation links
 
 These have not been invented or substituted with fake information.
-
-## Contact
-
-**Email:** komalireddy2305@gmail.com
-
-**Phone:** +91 9030956602
-
-**LinkedIn:** LinkedIn profile included in the portfolio
-
-## Author
-
-**Komali Reddy Bumireddy**
-
-B.E. – Computer Science and Engineering  
-Stanley College of Engineering and Technology for Women
